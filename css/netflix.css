@@ -1,0 +1,12 @@
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1b1a1a;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: gainsboro;
+  border-radius: 10px;
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/netflix.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black text-white">
+    <!-- banner -->
+    <div
+      style="
+        background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/154a9550-ce07-4e28-819c-63185dd849f8/web/IN-en-20250106-TRIFECTA-perspective_27b02e7c-f668-4639-9e82-1a5485084b2a_large.jpg');
+      "
+      class=""
+    >
+      <div
+        class="nav bg-black opacity-90 flex-col justify-between h-full w-full"
+      >
+        <!-- nav section -->
+        <nav class="container mx-auto py-5 px-10 flex justify-between">
+          <h1 class="text-red-700 text-4xl font-bold">Netflix</h1>
+          <div class="flex gap-5">
+            <div class="grid shrink-0 grid-cols- focus-within:relative">
+              <select
+                id="currency"
+                name="currency"
+                aria-label="Currency"
+                class="col-start-1 bg-black border row-start-1 w-full appearance-none rounded-md py-1.5 pl-3 pr-7 text-base tex placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-gray-600 sm:text-sm/6"
+              >
+                <option>English</option>
+                <option>Hindi</option>
+              </select>
+              <svg
+                class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <button class="px-2 py-1.5 bg-red-700 rounded-md">Login</button>
+          </div>
+        </nav>
+        <!-- heroic content -->
+        <div class="flex justify-center items-center h-[531px] mt-16">
+          <div
+            class="lg:w-1/2 w-full p-10 flex flex-col gap-4 items-center justify-center text-center"
+          >
+            <h1 class="text-5xl font-bold mb-4">
+              Unlimited movies, TV shows and more
+            </h1>
+            <h3 class="text-lg font-bold">
+              Starts at ₹149. Cancel at any time.
+            </h3>
+            <p>
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </p>
+            <div class="flex gap-2 justify-center w-full">
+              <input
+                placeholder="Your Email"
+                type="text"
+                class="px-5 bg-black border md:w-3/4 rounded-md"
+              />
+              <button
+                class="px-8 py-3 bg-red-700 md:w-1/4 font-bold rounded-md"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- moviesList -->
+    <div class="container mx-auto p-20">
+      <!-- Trending Now -->
+      <h1 class="text-2xl">Trending Now</h1>
+      <select
+        name="country"
+        id="country"
+        class="bg-black opacity-80 border px-3 py-1.5 rounded-md mt-2"
+      >
+        <option value="india">India</option>
+        <option value="global">Global</option>
+      </select>
+      <div class="flex p-10 gap-8 overflow-auto">
+        <img class="hover:scale-110" src="../asserts/movi1.webp" alt="movies" />
+        <img class="hover:scale-110" src="../asserts/movi4.webp" alt="movies" />
+        <img class="hover:scale-110" src="../asserts/movi3.webp" alt="movies" />
+        <img class="hover:scale-110" src="../asserts/movi2.webp" alt="movies" />
+        <img class="hover:scale-110" src="../asserts/movi4.webp" alt="movies" />
+        <img class="hover:scale-110" src="../asserts/movi3.webp" alt="movies" />
+        <img class="hover:scale-110" src="../asserts/movi2.webp" alt="movies" />
+      </div>
+
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 py-10 gap-14">
+        <!-- card1 -->
+        <div
+          class="card border w-full bg-gradient-to-r from-black to-gray-900 rounded-md h-full p-5 hover:bg-gradient-to-l duration-1000 ease-linear transition-all"
+        >
+          <div class="h-full">
+            <h2 class="text-lg font-bold">
+              Download your shows to watch offline
+            </h2>
+            <p class="mt-4 text-sm sm:text-base">
+              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+              Blu-ray players and more.
+            </p>
+          </div>
+          <div class="float-end mt-4 sm:mt-0">
+            <svg
+              class="w-[48px] h-[48px] text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M13 11.15V4a1 1 0 1 0-2 0v7.15L8.78 8.374a1 1 0 1 0-1.56 1.25l4 5a1 1 0 0 0 1.56 0l4-5a1 1 0 1 0-1.56-1.25L13 11.15Z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M9.657 15.874 7.358 13H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2.358l-2.3 2.874a3 3 0 0 1-4.685 0ZM17 16a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H17Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- card2 -->
+        <div
+          class="card border w-full bg-gradient-to-r from-black to-gray-900 rounded-md h-full p-5 hover:bg-gradient-to-l duration-1000 ease-linear transition-all"
+        >
+          <div class="h-full">
+            <h2 class="text-lg font-bold">Enjoy on your TV</h2>
+            <p class="mt-4 text-sm sm:text-base">
+              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+              Blu-ray players and more.
+            </p>
+          </div>
+          <div class="float-end mt-4 sm:mt-0">
+            <svg
+              class="w-[48px] h-[48px] text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M13 11.15V4a1 1 0 1 0-2 0v7.15L8.78 8.374a1 1 0 1 0-1.56 1.25l4 5a1 1 0 0 0 1.56 0l4-5a1 1 0 1 0-1.56-1.25L13 11.15Z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M9.657 15.874 7.358 13H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2.358l-2.3 2.874a3 3 0 0 1-4.685 0ZM17 16a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H17Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- card3 -->
+        <div
+          class="card border w-full bg-gradient-to-r from-black to-gray-900 rounded-md h-full p-5 hover:bg-gradient-to-l duration-1000 ease-linear transition-all"
+        >
+          <div class="h-full">
+            <h2 class="text-lg font-bold">
+              Watch everywhere
+            </h2>
+            <p class="mt-4 text-sm sm:text-base">
+              Stream unlimited movies and TV shows on your phone, tablet, laptop
+              and TV.
+            </p>
+          </div>
+          <div class="float-end mt-4 sm:mt-0">
+            <svg
+              class="w-[48px] h-[48px] text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M13 11.15V4a1 1 0 1 0-2 0v7.15L8.78 8.374a1 1 0 1 0-1.56 1.25l4 5a1 1 0 0 0 1.56 0l4-5a1 1 0 1 0-1.56-1.25L13 11.15Z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M9.657 15.874 7.358 13H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2.358l-2.3 2.874a3 3 0 0 1-4.685 0ZM17 16a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H17Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- card4 -->
+        <div
+          class="card border w-full bg-gradient-to-r from-black to-gray-900 rounded-md h-full p-5 hover:bg-gradient-to-l duration-1000 ease-linear transition-all"
+        >
+          <div class="h-full">
+            <h2 class="text-lg font-bold">Create profiles for kids</h2>
+            <p class="mt-4 text-sm sm:text-base">
+              Send kids on adventures with their favourite characters in a space
+              made just for them — free with your membership.
+            </p>
+          </div>
+          <div class="float-end mt-4 sm:mt-0">
+            <svg
+              class="w-[48px] h-[48px] text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M13 11.15V4a1 1 0 1 0-2 0v7.15L8.78 8.374a1 1 0 1 0-1.56 1.25l4 5a1 1 0 0 0 1.56 0l4-5a1 1 0 1 0-1.56-1.25L13 11.15Z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M9.657 15.874 7.358 13H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2.358l-2.3 2.874a3 3 0 0 1-4.685 0ZM17 16a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H17Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frequently Asked Questions -->
+      <section>
+        <h1 class="text-4xl font-bold mt-4">Frequently Asked Questions</h1>
+        <!-- accordion -->
+        <div class="accordion accordion-flush ">
+          <div class="accordion-item border border-2 p-2 rounded  h-14 overflow-hidden mt-4 hover:h-full p-4">
+            <div class=" flex  justify-between quest mb-8 ">
+              <p>
+                What is the difference between Netflix and Hulu?
+              </p>
+              <p class="hover:rotate-90">></p>
+            </div>
+            <div class="answer">
+              <p>
+                Netflix is a streaming service that offers a wide variety of
+                titles, including movies, TV shows, anime, documentaries, and
+                more. Hulu, on the other hand, is a cable-TV service that offers
+                a selection of movies, TV shows, and documentaries. Both
+                services have their own unique features and offerings. Netflix
+                is available worldwide while Hulu is available in the United
+                States, Canada, and parts of Europe. Netflix offers a more
+                diverse selection of titles and features, while Hulu focuses on
+                providing a more popular and well-known content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush ">
+          <div class="accordion-item border border-2 p-2 rounded  h-14 overflow-hidden mt-4 hover:h-full p-4">
+            <p class="quest mb-8 ">
+              What is the difference between Netflix and Hulu?
+            </p>
+            <div class="answer">
+              <p>
+                Netflix is a streaming service that offers a wide variety of
+                titles, including movies, TV shows, anime, documentaries, and
+                more. Hulu, on the other hand, is a cable-TV service that offers
+                a selection of movies, TV shows, and documentaries. Both
+                services have their own unique features and offerings. Netflix
+                is available worldwide while Hulu is available in the United
+                States, Canada, and parts of Europe. Netflix offers a more
+                diverse selection of titles and features, while Hulu focuses on
+                providing a more popular and well-known content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush ">
+          <div class="accordion-item border border-2 p-2 rounded  h-14 overflow-hidden mt-4 hover:h-full p-4">
+            <p class="quest mb-8 ">
+              What is the difference between Netflix and Hulu?
+            </p>
+            <div class="answer">
+              <p>
+                Netflix is a streaming service that offers a wide variety of
+                titles, including movies, TV shows, anime, documentaries, and
+                more. Hulu, on the other hand, is a cable-TV service that offers
+                a selection of movies, TV shows, and documentaries. Both
+                services have their own unique features and offerings. Netflix
+                is available worldwide while Hulu is available in the United
+                States, Canada, and parts of Europe. Netflix offers a more
+                diverse selection of titles and features, while Hulu focuses on
+                providing a more popular and well-known content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush ">
+          <div class="accordion-item border border-2 p-2 rounded  h-14 overflow-hidden mt-4 hover:h-full p-4">
+            <p class="quest mb-8 ">
+              What is the difference between Netflix and Hulu?
+            </p>
+            <div class="answer">
+              <p>
+                Netflix is a streaming service that offers a wide variety of
+                titles, including movies, TV shows, anime, documentaries, and
+                more. Hulu, on the other hand, is a cable-TV service that offers
+                a selection of movies, TV shows, and documentaries. Both
+                services have their own unique features and offerings. Netflix
+                is available worldwide while Hulu is available in the United
+                States, Canada, and parts of Europe. Netflix offers a more
+                diverse selection of titles and features, while Hulu focuses on
+                providing a more popular and well-known content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush ">
+          <div class="accordion-item border border-2 p-2 rounded  h-14 overflow-hidden mt-4 hover:h-full p-4">
+            <p class="quest mb-8 ">
+              What is the difference between Netflix and Hulu?
+            </p>
+            <div class="answer">
+              <p>
+                Netflix is a streaming service that offers a wide variety of
+                titles, including movies, TV shows, anime, documentaries, and
+                more. Hulu, on the other hand, is a cable-TV service that offers
+                a selection of movies, TV shows, and documentaries. Both
+                services have their own unique features and offerings. Netflix
+                is available worldwide while Hulu is available in the United
+                States, Canada, and parts of Europe. Netflix offers a more
+                diverse selection of titles and features, while Hulu focuses on
+                providing a more popular and well-known content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      
+      
+        </div>
+      </section>
+
+      <p class="text-center p-4">Ready to watch? Enter your email to create or restart your membership.
+      </p>
+      <div class="flex gap-2 justify-center lg:w-1/2 mb-4 mx-auto">
+        <input
+          placeholder="Your Email"
+          type="text"
+          class="px-5 bg-black border md:w-3/4 rounded-md"
+        />
+        <button
+          class="px-8 py-3 bg-red-700 md:w-1/4 font-bold rounded-md"
+        >
+          Get Started
+        </button>
+      </div>
+    </div>
+
+
+    <footer class=" text-white py-8">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Section 1: Logo or Brand Name -->
+          <div class="flex justify-center md:justify-start">
+            <h2 class="text-2xl font-bold">Netflix</h2>
+          </div>
+    
+          <!-- Section 2: Navigation Links -->
+          <div class="flex justify-center space-x-6">
+            <a href="#" class="hover:text-gray-400">Home</a>
+            <a href="#" class="hover:text-gray-400">About</a>
+            <a href="#" class="hover:text-gray-400">Services</a>
+            <a href="#" class="hover:text-gray-400">Contact</a>
+          </div>
+    
+          <!-- Section 3: Social Media Links -->
+          <div class="flex justify-center space-x-6">
+            <a href="#" class="hover:text-gray-400">Facebook</a>
+            <a href="#" class="hover:text-gray-400">Twitter</a>
+            <a href="#" class="hover:text-gray-400">Instagram</a>
+          </div>
+        </div>
+    
+        <div class="mt-8 text-center">
+          <p class="text-sm">&copy; 2025 YourBrand. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
