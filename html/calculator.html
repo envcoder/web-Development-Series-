@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <input type="file" capture="user">
+    <script>
+      console.log("hello world");
+      function calculator() {
+        console.log("Welcome to the Calculator system");
+        console.log("choose an operation: ");
+        console.log("1. Addition");
+        console.log("2. Subtraction");
+        console.log("3. Multiplication");
+        console.log("4. Division");
+        console.log("5. Exit");
+        var choice = prompt("Enter your choice(1-5):");
+        if (choice === "5") {
+          console.log("Exiting the Calculator system");
+          return;
+        }
+        let num1 = parseFloat(prompt("Enter the first number:"));
+        let num2 = parseFloat(prompt("Enter the second number:"));
+
+        let result;
+        switch (choice) {
+          case "1":
+            result = num1 + num2;
+            console.log(`Result: ${num1} + ${num2} = ${result}`);
+
+            break;
+          case "2":
+            result = num1 - num2;
+            console.log(`Result: ${num1} - ${num2} = ${result}`);
+            break;
+          case "3":
+            result = num1 * num2;
+            console.log(`Result: ${num1} * ${num2} = ${result}`);
+            break;
+          case "4":
+            if (num2 === 0) {
+              console.log("Cannot divide by zero");
+              return;
+            }
+            result = num1 / num2;
+            console.log(`Result: ${num1} / ${num2} = ${result}`);
+            break;
+          default:
+            console.log("Invalid choice. Please try again.");
+            return;
+
+            calculator();
+        }
+      }
+
+      calculator();
+    </script>
+  </body>
+</html>
